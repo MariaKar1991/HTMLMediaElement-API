@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  color: rgb(53, 29, 205);
+  margin-top: 170px;
+  filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  width: 600px;
+  font-family: "Raleway", sans-serif;
+  font-size: 100pt;
+  text-align: center;
+  user-select: none;
+}
+
+#unicorns {
+  margin-top: 350px;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+}
+
+.control-buttons {
+  margin-top: -550px;
+}
+
+#play-btn {
+  border-radius: 50%;
+  border: 5px solid rgb(133, 9, 135);
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+#play-btn:hover {
+  background-color: rgb(133, 9, 135);
+}
+
+#pause-btn {
+  border-radius: 50%;
+  border: 5px solid rgb(133, 9, 135);
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+  background-color: white;
+}
+
+#pause-btn:hover {
+  background-color: rgb(133, 9, 135);
+}
+
+.play-btn {
+  height: 20px;
+  width: 20px;
+  margin: 0;
+}
+
+.pause-btn {
+  height: 20px;
+  width: 25px;
+  margin: 0;
+}
+
+#next-btn {
+  margin-top: 500px;
+  border-radius: 5px;
+  border: none;
+  font-size: 35px;
+  background-color: white;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(133, 9, 135);
+  border: 3px solid rgb(133, 9, 135);
+}
+
+#next-btn:hover {
+  background-color: rgb(133, 9, 135);
+  color: white;
+}
+
+.right-arrow {
+  height: 20px;
+  width: 30px;
+}
+
+.lessons {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.acknowledges {
+  text-align: center;
+  color: grey;
+  margin-top: -150px;
+}
+
+#progress-bar {
+  width: 500px;
+  height: 25px;
+  margin-top: 15px;
+  appearance: none;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+#progress-bar::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+#progress-bar::-webkit-progress-value {
+  background-color: #129173;
+  border-radius: 10px;
+}
+
+#progress-bar::-moz-progress-bar {
+  background-color: #6c5ce7;
+  border-radius: 10px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-JKs5Rg8z0eLyo57jxR/JWpX2Z7wmzGtPmYCwiWfG6ZyMSxOkKDx7FdjJ7fzURFkm"
+      crossorigin="anonymous"
+    />
+    <title>Unicorn Land</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Video element -->
+      <div id="video-container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+        <video
+          id="unicorns"
+          height="400px"
+          width="600px"
+          poster="./img/Unicorn2-dance.jpg"
+          src="./video/unicorn1.mp4"
+        ></video>
+        <!-- Control buttons -->
+        <div class="control-buttons">
+          <button id="play-btn">
+            <img class="play-btn" src="./img/play-button.png" />
+          </button>
+          <button id="pause-btn">
+            <img class="pause-btn" src="./img/pause.png" />
+          </button>
+        </div>
+      </div>
+      <!-- Progress bar -->
+      <progress id="progress-bar" value="0" max="100"></progress>
+      <!-- Next button and lessons -->
+      <button id="next-btn">
+        Next Lesson <img class="right-arrow" src="./img/right-arrow.png" />
+      </button>
+      <ul class="lessons">
+        <li id="lesson-1"><span>🦄</span> Lesson 1: Happy Unicorns 1</li>
+        <li id="lesson-2"><span>🦄</span> Lesson 2: Happy Unicorns 2</li>
+      </ul>
+    </div>
+
+    <svg id="filters">
+      <defs>
+        <filter id="threshold">
+          <feColorMatrix
+            in="SourceGraphic"
+            type="matrix"
+            values="1 0 0 0 0
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 255 -140"
+          />
+        </filter>
+      </defs>
+    </svg>
+    <div class="acknowledges">
+      Video by RDNE Project: https://www.pexels.com/el-gr/video/5899737/
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
